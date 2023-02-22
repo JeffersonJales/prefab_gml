@@ -22,14 +22,22 @@ function __prefab_data_class(instance) constructor {
 			}
 		}
 	}
+	
 	if(PREFAB_INSTANCE_VARIABLES_ENABLE){
-		_set_variables(obj_index, instance);
-		
-		if(PREFAB_INSTANCE_VARIABLES_INHERENT){
-			var _parent = object_get_parent(obj_index);
-			with(_parent != PREFAB_INSTANCE_WITHOUT_PARENT){
-				_set_variables(_parent, instance);
-				_parent = object_get_parent(_parent);
+		if(PREFAB_INSTANCE_VARIABLES_SNAPSHOT){
+			var _names = variable_instance_get_names(instance);
+			for(var i = 0; i < array_length(_names); i++){
+				variable_struct_set(variables, _names[i], variable_instance_get(instance, _names[i]));
+			}
+		}
+		else {
+			_set_variables(obj_index, instance);
+			if(PREFAB_INSTANCE_VARIABLES_INHERENT){
+				var _parent = object_get_parent(obj_index);
+				with(_parent != PREFAB_INSTANCE_WITHOUT_PARENT){
+					_set_variables(_parent, instance);
+					_parent = object_get_parent(_parent);
+				}
 			}
 		}
 	}
