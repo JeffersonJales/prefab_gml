@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "System (Dont Touch!)",
-    "path": "folders/Scripts/Prefabs/System (Dont Touch!).yy",
+    "path": "folders/Prefabs/System (Dont Touch!).yy",
   },
 }

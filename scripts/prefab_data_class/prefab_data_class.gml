@@ -95,5 +95,4 @@ function __prefab_data_class(instance) constructor {
 		_inst.prefab_on_create();
 		return _inst 
 	}
-	
 }

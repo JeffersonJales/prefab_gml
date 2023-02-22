@@ -25,14 +25,6 @@ function prefab_instance_class(array_instances) constructor {
 		}
 	}
 		
-	static remove_instance_by_id = function(inst_id){
-		
-	}
-	
-	static remove_instance_by_obj = function(obj_id){
-	
-	}	
-		
 	static destroy = function(){
 		for(var i = 0; i < array_length(instances); i++){
 			if(__safe_check(i)){

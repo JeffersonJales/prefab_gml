@@ -19,30 +19,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4281EC1B","properties":[],"isDnd":false,"objectId":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":-64.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Prefab_debug_message_1","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4381323E","properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":null,"objectId":null,"value":"TESTANDO OS PREFABS",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"on_click_data","path":"objects/obj_button/obj_button.yy",},"objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"value":"White",},
-          ],"isDnd":false,"objectId":{"name":"obj_button_show_debug_message","path":"objects/obj_button_show_debug_message/obj_button_show_debug_message.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49F5CD73","properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":null,"objectId":null,"value":"PREFAB CREATE 1",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"on_click_data","path":"objects/obj_button/obj_button.yy",},"objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"value":"Green",},
-          ],"isDnd":false,"objectId":{"name":"obj_button_show_debug_message","path":"objects/obj_button_show_debug_message/obj_button_show_debug_message.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4288282546,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_784CB24C","properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":null,"objectId":null,"value":"ISSO N É PREFAB",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"on_click_data","path":"objects/obj_button/obj_button.yy",},"objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"value":"Blue",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"on_click","path":"objects/obj_button/obj_button.yy",},"objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"value":"button_show_message",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_button/obj_button.yy",},"objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"value":"Dont Click",},
-          ],"isDnd":false,"objectId":{"name":"obj_button_show_message","path":"objects/obj_button_show_message/obj_button_show_message.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294927674,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_32615B84","properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":null,"objectId":null,"value":"TESTANDO",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"on_click_data","path":"objects/obj_button/obj_button.yy",},"objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"value":"Yellow",},
-          ],"isDnd":false,"objectId":{"name":"obj_button_show_debug_message","path":"objects/obj_button_show_debug_message/obj_button_show_debug_message.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4285071356,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26C6F8E9","properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":null,"objectId":null,"value":"realmente é um test",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"on_click_data","path":"objects/obj_button/obj_button.yy",},"objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"value":"Green Forte",},
-          ],"isDnd":false,"objectId":{"name":"obj_button_show_debug_message","path":"objects/obj_button_show_debug_message/obj_button_show_debug_message.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4284874643,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":32.0,},
-      ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Prefab_debug_message_1","instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Prefab_debug_message","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26A7443C","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"text","path":"objects/obj_debug_message/obj_debug_message.yy",},"objectId":null,"value":"TESTANDO OS PREFABS",},
@@ -103,11 +80,6 @@
     {"name":"inst_E11B32C","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_17355023","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_3B7045F7","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_4381323E","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_49F5CD73","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_784CB24C","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_32615B84","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_26C6F8E9","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -132,6 +104,6 @@
   },
   "parent": {
     "name": "Rooms",
-    "path": "folders/Objects/Example/Rooms.yy",
+    "path": "folders/Example/Rooms.yy",
   },
 }

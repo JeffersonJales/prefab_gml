@@ -93,6 +93,6 @@
   },
   "parent": {
     "name": "Sprites",
-    "path": "folders/Objects/Example/Sprites.yy",
+    "path": "folders/Example/Sprites.yy",
   },
 }

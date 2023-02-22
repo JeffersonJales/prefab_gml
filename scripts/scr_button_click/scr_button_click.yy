@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/Objects/Example/Scripts.yy",
+    "path": "folders/Example/Scripts.yy",
   },
 }

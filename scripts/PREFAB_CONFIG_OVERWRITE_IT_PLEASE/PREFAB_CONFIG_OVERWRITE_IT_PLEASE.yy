@@ -6,6 +6,6 @@
   "isCompatibility": false,
   "parent": {
     "name": "Prefabs",
-    "path": "folders/Scripts/Prefabs.yy",
+    "path": "folders/Prefabs.yy",
   },
 }

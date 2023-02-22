@@ -5,7 +5,6 @@ global.__prefab_instance_variables = {}			/// Will hold an array with strings (v
 function prefab_instance_implemts(){
 	prefab_on_create = function(){};
 	prefab_on_destroy = function(){};
-
 	prefab_on_active = function(){}
 	prefab_on_deactive = function(){}
 	
