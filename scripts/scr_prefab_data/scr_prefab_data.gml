@@ -53,6 +53,9 @@ function prefab_data_add_auto(destroy_instances = true){
 function prefab_data_remove(prefab){
 	var _data = global.__prefabs_data[$ prefab];
 	if(_data != undefined) variable_struct_remove(global.__prefabs_data, prefab);
+
+	var _cache = global.__prefabs_relative_position_data[$ prefab];
+	if(_cache != undefined) variable_struct_remove(global.__prefabs_relative_position_data, prefab); 
 }
 
 function prefab_data_exists(prefab){ 
