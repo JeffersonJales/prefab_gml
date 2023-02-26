@@ -97,3 +97,5 @@ function prefab_instance_variables_set(obj_index, array_string_variables){
 	if(!is_array(array_string_variables)) array_string_variables = [array_string_variables];
 	global.__prefab_instance_variables[$ object_get_name(obj_index)] = array_string_variables;
 }
+
+prefab_instance_variables_set(obj_prefab, ["depth_priority", "unique_id"];
