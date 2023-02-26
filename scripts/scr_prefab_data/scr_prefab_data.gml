@@ -10,6 +10,15 @@ function prefab_data_add(layer_name, destroy_instances = true){
 		_insts[i] = layer_instance_get_instance(_insts[i]);
 	}
 	
+	if(PREFAB_INSTANCE_AUTO_IMPLEMENTS){
+		for (var i = 0; i < array_length(_insts); ++i) {
+			var _obj = _insts[i].object_index;
+			if(!object_is_ancestor(_obj, obj_prefab)){
+				with(_insts[i]) prefab_instance_implemts();
+			}
+		}
+	}
+	
 	var _len = array_length(_insts);
 	var _arr = array_create(_len);
 

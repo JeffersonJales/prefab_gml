@@ -9,5 +9,6 @@
 #macro PREFAB_INSTANCE_VARIABLES_ENABLE true		///	If you want to save / load the variables of the prefab to the instance
 #macro PREFAB_INSTANCE_VARIABLES_SNAPSHOT true	/// It will pick up all variables of the instance and set then. Case false, put the variables you want to save manually with <prefab_instance_variables_set>		
 #macro PREFAB_INSTANCE_VARIABLES_INHERENT true	/// When using <prefab_instance_variables_set> it will check if the object have parents 
+#macro PREFAB_INSTANCE_AUTO_IMPLEMENTS true			/// Case you're using objects that are NOT chield of the obj_prefab, its can setup this too you
 
 #macro PREFAB_INSTANCE_CACHE_RELATIVE_POSITION true	/// When using <prefab_instance_create_depth_at> or <prefab_instance_create_layer_at>, it will save the center position (x,y) of the entire prefab. It will cache all the calculations results

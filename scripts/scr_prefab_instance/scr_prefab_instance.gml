@@ -1,18 +1,20 @@
 
 #macro PREFAB_INSTANCE_WITHOUT_PARENT -100
+#macro PREFAB_INSTANCE_FUNCTION_NULL function(){}
+
 global.__prefab_instance_variables = {}			/// Will hold an array with strings (variables names / pointers)
 
-function prefab_instance_implemts(){
-	prefab_on_create = function(){};
-	prefab_on_destroy = function(){};
-	prefab_on_active = function(){}
-	prefab_on_deactive = function(){}
+function prefab_instance_implemts(uniqueId = "myId", on_create = PREFAB_INSTANCE_FUNCTION_NULL, on_destroy = PREFAB_INSTANCE_FUNCTION_NULL, on_active = PREFAB_INSTANCE_FUNCTION_NULL, on_deactive = PREFAB_INSTANCE_FUNCTION_NULL, depthPriority = 50){
+	prefab_on_create = on_create;
+	prefab_on_destroy =on_destroy;
+	prefab_on_active = on_active;
+	prefab_on_deactive = on_deactive;
 	
 	if(!variable_instance_exists(id, "depth_priority"))
-		depth_priority = 50;
+		depth_priority = depthPriority;
 		
 	if(!variable_instance_exists(id, "unique_id"))
-		unique_id = "my_id";
+		unique_id = uniqueId;
 }
 
 function __prefab_instance_create(prefab, is_layer, _depth, _x, _y){
@@ -30,7 +32,10 @@ function __prefab_instance_create(prefab, is_layer, _depth, _x, _y){
 		}
 	}
 
-	return new prefab_instance_class(_arr_instances);
+
+	var _prefab_instance = new prefab_instance_class(_arr_instances);
+	__prefab_instance_active(_prefab_instance);
+	return _prefab_instance;
 }
 
 function __prefab_instance_create_at(prefab, is_layer, _depth, _x, _y){
@@ -49,7 +54,27 @@ function __prefab_instance_create_at(prefab, is_layer, _depth, _x, _y){
 		}
 	}
 
-	return new prefab_instance_class(_arr_instances);
+	var _prefab_instance = new prefab_instance_class(_arr_instances);
+	__prefab_instance_active(_prefab_instance);
+	return _prefab_instance;
+}
+
+function __prefab_instance_active(prefab_instance){
+	var _arr = prefab_instance.instances
+
+	if(PREFAB_INSTANCE_AUTO_IMPLEMENTS){
+		for(var i = 0; i < array_length(_arr); i++){
+			if(!object_is_ancestor(_arr[i].object_index, obj_prefab)){
+				with(_arr[i]) prefab_instance_implemts();
+			}
+			_arr[i].prefab_on_create();
+		}
+	}
+	else{
+		for(var i = 0; i < array_length(_arr); i++){
+			_arr[i].prefab_on_create();
+		}
+	}
 }
 
 function prefab_instance_create_layer(prefab, layer_id, relative_x = 0, relative_y = 0){
