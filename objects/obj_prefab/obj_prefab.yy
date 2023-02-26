@@ -25,6 +25,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"unique_id","varType":2,"value":"myId","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"depth_priority","varType":1,"value":"50","rangeEnabled":true,"rangeMin":0.0,"rangeMax":100.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],

@@ -10,6 +10,9 @@ function prefab_instance_implemts(){
 	
 	if(!variable_instance_exists(id, "depth_priority"))
 		depth_priority = 50;
+		
+	if(!variable_instance_exists(id, "unique_id"))
+		unique_id = "my_id";
 }
 
 function __prefab_instance_create(prefab, is_layer, _depth, _x, _y){
