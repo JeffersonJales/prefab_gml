@@ -1,4 +1,4 @@
-function prefab_instance_create_depth(_depth, _prefab_name){
+function prefab_instance_create_depth(_x, _y, _depth, _prefab_name){
 	var _data = prefab_data_get(_prefab_name);
 	var _prefab_position_data = prefab_relative_position_get(_prefab_name)
 	
@@ -7,9 +7,9 @@ function prefab_instance_create_depth(_depth, _prefab_name){
 	
 	for(var i = 0; i < _len; i++){
 		var _info_prefab_local_inst = _data[i];
-		_arr_instances[i] =	instance_create_layer(
-			_info_prefab_local_inst.pos_x, 
-			_info_prefab_local_inst.pos_y, 
+		_arr_instances[i] =	instance_create_depth(
+			_info_prefab_local_inst.pos_x + _x, 
+			_info_prefab_local_inst.pos_y + _y, 
 			_depth, 
 			_info_prefab_local_inst.obj_index, 
 			__prefab_data_generate_struct(_info_prefab_local_inst)
