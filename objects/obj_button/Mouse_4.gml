@@ -1,2 +1,2 @@
 /// @desc 
-on_click(on_click_data);
+__pref_on_click(__pref_on_click_data);
